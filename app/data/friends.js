@@ -1,6 +1,6 @@
 var people = [
     {
-        "name": "Tristan",
+        "name": "Gio",
         "photo": "https://static.independent.co.uk/s3fs-public/thumbnails/image/2017/09/12/11/naturo-monkey-selfie.jpg?w968h681",
         "scores": [
             2,
@@ -30,8 +30,23 @@ var people = [
             3,
             3
         ]
+    },
+    {
+        "name": "Carl",
+        "photo": "https://chatengine-quickstart-app.pubnub.com/pubnub.png",
+        "scores": [
+            1,
+            2,
+            4,
+            4,
+            1,
+            2,
+            3,
+            5,
+            1,
+            1
+        ]
     }
 ];
-
 
 module.exports = people;
