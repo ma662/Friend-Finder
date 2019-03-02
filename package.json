@@ -1,0 +1,23 @@
+{
+  "name": "friend-finder",
+  "version": "1.0.0",
+  "description": "simple friend finding application based on survey responses",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ma662/Friend-Finder.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ma662/Friend-Finder/issues"
+  },
+  "homepage": "https://github.com/ma662/Friend-Finder#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
