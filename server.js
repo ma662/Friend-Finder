@@ -2,7 +2,7 @@
 var express = require("express");
 
 var app = express();
-var PORT = process.envPORT || 9001;
+var PORT = process.env.PORT || 9001;
 
 // init express
 app.use(express.urlencoded({ extended: true }));
