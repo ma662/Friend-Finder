@@ -40,16 +40,52 @@
 <script type="text/javascript" defer>
 
     var sampleAns = ["No Opinion", "Agree", "Disagree", "Strongly Disagree", "Strongly Agree", "Agree", "No Opinion", "No Opinion", "Agree", "Agree"];
+    // parse answers   
+    
+    for(var i=0; i<sampleAns.length; i++) {
+
+        switch (sampleAns[i]) {
+            case "Strongly Disagree": 
+                sampleAns[i] = 1;
+            break;
+
+            case "Disagree": 
+                sampleAns[i] = 2;
+            break;
+
+            case "No Opinion": 
+                sampleAns[i] = 3;
+            break;
+
+            case "Agree": 
+                sampleAns[i] = 4;
+            break;
+
+            case "Strongly Agree": 
+                sampleAns[i] = 5;
+            break;
+
+            default:
+                console.log("Default case stuff");
+            break;
+        }
+    }
+    console.log("sampleAns is: ");
+    console.log(sampleAns);
 
 
-    // parse answers
     
 
 
     $("<button>").attr("type", "submit").text("My Button").appendTo(".panel");
 
     $(':button').on("click", () => {
-        console.log()
+        // send to the server on click
+        console.log();
+
+        alert("Your response has been received. Thank you.");
+
+        $.ajax();
     });
 </script> 
 </body>
