@@ -5,41 +5,294 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Friend-Finder Survey</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+
+    <!-- jQuery -->
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
+
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <!-- jQuery -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-</head>
+</head> 
+
 <body>
-    
-    <div class="container">
+    <div class="container" id="cnt1">
+            <div class="col-md-12" id="panel1" align="center">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">
+                            <span class="fa fa-question-circle"></span>   Personality Survey</h3>
+                            <hr>
 
-        <div class="container text-center">
-            <div class="panel-heading">Survey page</div>
-            <div class="panel panel-default">
-                <div class="panel-body">A Basic Panel</div>
-                
-                
-                <div class="row">
-                    <div class="col">
-                    <p>Question 1</p>
-                    <p>Question 2</p>
-                    <p>Question 3</p>
-                    <p>Question 4</p>
-                    <p>Question 5</p>
+                    </div>
+
+                <!-- <div class="panel-body">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p> 1: Conflict just ain't in my nature: </p>
+                            <select name="answer" id="test">
+                                <option value="5">Strongly Agree</option>
+                                <option value="4">Agree</option>
+                                <option value="3" selected>No Opinion</option>
+                                <option value="2">Disagree</option>
+                                <option value="1">Strongly Disagree</option>
+                            </select>
+                        <hr>
+                        </div>
+                    </div>
+                </div>  
+
+                <div class="panel-body">
+                    <div class="row">  
+                            <div class="col-md-12">
+                            <p> 2: I ain't given to relying on others for support: </p>
+                            <select name="answer">
+                                <option value="5">Strongly Agree</option>
+                                <option value="4">Agree</option>
+                                <option value="3" selected>No Opinion</option>
+                                <option value="2">Disagree</option>
+                                <option value="1">Strongly Disagree</option>
+                            </select>
+                        <hr>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>  
 
+                <div class="panel-body">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p> 3: I'm always fixing to be the center of attention: </p>
+                                <select name="answer">
+                                    <option value="5">Strongly Agree</option>
+                                    <option value="4">Agree</option>
+                                    <option value="3" selected>No Opinion</option>
+                                    <option value="2">Disagree</option>
+                                    <option value="1">Strongly Disagree</option>
+                                </select>
+                            <hr>
+                            </div>
+                        </div>
+                </div>
 
+                <div class="panel-body">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p> 4: I'm slow to embrace new ideas: </p>
+                                <select name="answer">
+                                    <option value="5">Strongly Agree</option>
+                                    <option value="4">Agree</option>
+                                    <option value="3" selected>No Opinion</option>
+                                    <option value="2">Disagree</option>
+                                    <option value="1">Strongly Disagree</option>
+                                </select>
+                            <hr>
+                            </div>
+                        </div>
+                </div>
 
+                <div class="panel-body">
+                        <div class="row">
+                            <div class="col-md-12">                                
+                                <p> 5: I charge in to deal with my problems head-on: </p>
+                                <select name="answer">
+                                    <option value="5">Strongly Agree</option>
+                                    <option value="4">Agree</option>
+                                    <option value="3" selected>No Opinion</option>
+                                    <option value="2">Disagree</option>
+                                    <option value="1">Strongly Disagree</option>
+                                </select>
+                            <hr>
+                            </div>
+                        </div>
+                </div>
+
+                <div class="panel-body">
+                        <div class="row">
+                            <div class="col-md-12">                                
+                                <p> 6: I'm one others can rely on: </p>
+                                <select name="answer">
+                                    <option value="5">Strongly Agree</option>
+                                    <option value="4">Agree</option>
+                                    <option value="3" selected>No Opinion</option>
+                                    <option value="2">Disagree</option>
+                                    <option value="1">Strongly Disagree</option>
+                                </select>
+                            <hr>
+                            </div>
+                        </div>
+                </div>
+
+                <div class="panel-body">
+                        <div class="row">
+                            <div class="col-md-12">                                
+                                <p> 7: I find beauty in simplicity: </p>
+                                <select name="answer">
+                                    <option value="5">Strongly Agree</option>
+                                    <option value="4">Agree</option>
+                                    <option value="3" selected>No Opinion</option>
+                                    <option value="2">Disagree</option>
+                                    <option value="1">Strongly Disagree</option>
+                                </select>
+                            <hr>
+                            </div>
+                        </div>
+                </div>
+
+                <div class="panel-body">
+                        <div class="row">
+                            <div class="col-md-12">                                
+                                <p> 8: I'm a people person on most days: </p>
+                                <select name="answer">
+                                    <option value="5">Strongly Agree</option>
+                                    <option value="4">Agree</option>
+                                    <option value="3" selected>No Opinion</option>
+                                    <option value="2">Disagree</option>
+                                    <option value="1">Strongly Disagree</option>
+                                </select>
+                            <hr>
+                            </div>
+                        </div>
+                </div>
+
+                <div class="panel-body">
+                        <div class="row">
+                            <div class="col-md-12">                                
+                                <p> 9: If you believe it, it will happen: </p>
+                                <select name="answer">
+                                    <option value="5">Strongly Agree</option>
+                                    <option value="4">Agree</option>
+                                    <option value="3" selected>No Opinion</option>
+                                    <option value="2">Disagree</option>
+                                    <option value="1">Strongly Disagree</option>
+                                </select>
+                            <hr>
+                            </div>
+                        </div>
+                </div>
+
+                <div class="panel-body">
+                        <div class="row">
+                            <div class="col-md-12">                                
+                                <p> 10: American Pizza is a boring food: </p>
+                                <select name="answer">
+                                    <option value="5">Strongly Agree</option>
+                                    <option value="4">Agree</option>
+                                    <option value="3" selected>No Opinion</option>
+                                    <option value="2">Disagree</option>
+                                    <option value="1">Strongly Disagree</option>
+                                </select>
+                            <hr>
+                            </div>
+                        </div>
+                </div>
+            </div> -->
+
+            <!-- <div class="panel-footer">
+                <div class="row">
+                    <div class="col-md-4"></div>
+
+                    <div class="col-md-4" align="center">
+                            <button type="button" class="btn btn-success btn-sm btn-block" style="height: 120%">
+                            <span class="fa fa-send"></span>Submit</button>
+                    </div>
+
+                    <div class="col-md-4"></div>
+                </div>
+            </div> -->
     </div>
+            
+            <style>
+            #cnt1 {
+                background-color: rgba(215, 212, 212, 0.88);
+                margin-bottom: 70px;
+            }
+            
+            #panel1 {
+                padding:20px;
+            }
+            
+            .panel-body:not(.two-col) {
+                padding: 0px;
+            }
+            
+            .panel-body .radio, .panel-body .checkbox {
+                margin-top: 0px;
+                margin-bottom: 0px;
+            }
+            
+            .panel-body .list-group {
+                margin-bottom: 0;
+            }
+            
+            .margin-bottom-none {
+                margin-bottom: 0;
+            }
+            </style>
 
 </body>
+<script type="text/javascript" defer>
+    // array length
+    // var someLength = 3;
 
-<script>
+    var qArr = ["Conflict just ain't in my nature", "I ain't given to relying on others for support", "I'm always fixing to be the center of attention", "I'm slow to embrace new ideas", "I charge in to deal with my problems head-on", "I'm one others can rely on", "I find beauty in simplicity", "I'm a people person on most days", "If you believe it, it will happen", "American Pizza is a boring food"];
+
+    for (var i=0; i<qArr.length; i++) {
+        var panelBody = $("<div>").addClass("panel-body").attr("id", "q" + i);
+        var row = $("<div>").addClass("row");
+        var col = $("<div>").addClass("col-md-12");
+        var p = $("<p>").text((i + 1) + ": " + qArr[i] + ":");
+        var sel = $("<select>").attr("name", "answer" + i);
+
+
+        sel.append('<option value="5">Strongly Agree</option>');
+        sel.append('<option value="4">Agree</option>');
+        sel.append('<option value="3" selected>No Opinion</option>');
+        sel.append('<option value="2">Disagree</option>');
+        sel.append('<option value="1">Strongly Disagree</option>');
+            
+        p.appendTo(col);
+        sel.appendTo(col);
+        col.append("<hr>");
+        col.appendTo(row);
+        row.appendTo(panelBody);
+        panelBody.appendTo(".panel-default");
+    }
+
+    // footer
+    var row = $("<div class='row'>");
+    row.append("<div class='col-md-4'>");
+
+    var mid = $("<div class='col-md-4'>");
+        mid.append('<button type="button" class="btn btn-success btn-sm btn-block" style="height: 120%"><span class="fa fa-send"></span>Submit</button>');
+    
+    row.append(mid);
+
+    var footer = $("<div>").addClass("panel-footer");
+    footer.append(row);
+
+    footer.appendTo("#panel1");
+
+    $(":button").on("click", function (event) {
+        event.preventDefault();
+        console.log("Working");
+
+        var test = $("[name=answer9]").find(":selected").text();
+        console.log(test);
+
+        var respArr = [];
+        for (var i=0; i<qArr.length; i++) {
+            respArr.push($("[name=answer" + i + "]").find(":selected").text());
+        }
+
+        console.log(respArr);
+        alert("Thank you. Your response has been submitted");
+        return document.location.href = "home.html";
+    });
+
+
+    
 </script> 
 
 </html>
