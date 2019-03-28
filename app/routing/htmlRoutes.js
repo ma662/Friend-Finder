@@ -7,11 +7,11 @@ module.exports = function(app) {
     });
     
     app.get("/", function(req, res) {
-        res.sendFile(path.join(__dirname, "../public/home.html"));
-    });
-
-    app.get("/:test", function(req, res) {
-        console.log(req.params.test);
         return res.sendFile(path.join(__dirname, "../public/home.html"));
     });
+
+    // app.get("/:test", function(req, res) {
+    //     console.log(req.params.test);
+    //     return res.sendFile(path.join(__dirname, "../public/home.html"));
+    // });
 }
