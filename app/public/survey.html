@@ -145,11 +145,13 @@
 
     // submit to server
     // make api route
+    var name = $("#name").val();
     $.ajax({
       url: "/api/friends",
       method: "POST",
       data: {
-        respArr
+        name: name,
+        respArr: respArr
       },
       dataType: "json",
     }).then(function(response) {

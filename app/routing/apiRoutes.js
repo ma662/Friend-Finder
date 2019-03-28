@@ -1,5 +1,4 @@
 var path = require("path");
-
 var people = require("../data/friends");
 
 module.exports = function(app) {
@@ -11,7 +10,9 @@ module.exports = function(app) {
     app.post("/api/friends", function(req, res) {
       // handle incoming survey results
       console.log("going to console the request");
-      console.log(req.body.respArr);
+      console.log(req.body);
+      // console.log(req.body.respArr);
+      // console.log(req.body.name);
   
       var convArr = req.body.respArr;
       for (var i=0; i<req.body.respArr.length; i++) {
@@ -26,8 +27,8 @@ module.exports = function(app) {
       console.log(convArr);
   
       let person = {
-        "name": "getName",
-        "photo": "somePhoto",
+        "name": req.body.name,
+        "photo": "https://via.placeholder.com/150",
         "scores": convArr
       };
       people.push(person);
@@ -68,7 +69,7 @@ module.exports = function(app) {
         console.log(totalDifference);
 
       }
-      
+
       // go through people
       for (var i=0; i<people.length; i++) {
         // send appropriate response
